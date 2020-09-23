@@ -110,7 +110,7 @@ User::where('name', '=', 'Admin')->toRawSql()
 This code can also be found in [AppServiceProvider](https://github.com/JBtje/LaravelSPABoilerplate/blob/master/app/Providers/AppServiceProvider.php).
 
 #### Vue-router
-The routes are defined in the [router](https://github.com/JBtje/LaravelSPABoilerplate/blob/master/resources/js/router) folder. This folder contains the [DefaultRouter] (https://github.com/JBtje/LaravelSPABoilerplate/blob/master/resources/js/router/DefaultRouter.php), for non-logged in users as well as the [UserRouter] (https://github.com/JBtje/LaravelSPABoilerplate/blob/master/resources/js/router/UserRouter.php), for logged in users. You can easily extend this with more routes based upon the user's permissions.
+The routes are defined in the [router](https://github.com/JBtje/LaravelSPABoilerplate/blob/master/resources/js/router) folder. This folder contains the [DefaultRouter](https://github.com/JBtje/LaravelSPABoilerplate/blob/master/resources/js/router/DefaultRouter.php), for non-logged in users as well as the [UserRouter](https://github.com/JBtje/LaravelSPABoilerplate/blob/master/resources/js/router/UserRouter.php), for logged in users. You can easily extend this with more routes based upon the user's permissions.
 
 #### Handling error responses
 This project comes with two JavaScript functions to handle axios call responses. The methods can be found in [formMixin.js](https://github.com/JBtje/LaravelSPABoilerplate/blob/master/resources/js/mixins/formMixin.js) 
@@ -145,7 +145,7 @@ Rules: [
 ```
 
 #### pr / pre / ddc
-These functions can be found in [devHelper](https://github.com/JBtje/LaravelSPABoilerplate/tree/master/app/Http/Helpers/devHelper.php). Note that dump-server is included in the project, though in some cases you might need these.
+These functions can be found in [devHelper](https://github.com/JBtje/LaravelSPABoilerplate/blob/master/app/Http/Helpers/devHelper.php). Note that dump-server is included in the project, though in some cases you might need these.
 ##### pr
 Short for `print_r( ... )`
 
