@@ -1,7 +1,7 @@
-import validate from './validate.js';
+import validate from './validate';
 
-// Regular Expressions to validate specific form input
-export default function( i18n ) {
+// Function of async-validator validators, with vue-i18n translations.
+const rules = function( i18n ) {
     return {
         required: [
             {
@@ -48,4 +48,11 @@ export default function( i18n ) {
             },
         ],
     };
+};
+
+// Export a plugin that can be registered with Vue 3
+export default {
+    install: ( app, i18n ) => {
+        app.config.globalProperties.$rules = rules( i18n );
+    },
 };

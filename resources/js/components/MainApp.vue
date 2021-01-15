@@ -10,11 +10,12 @@
     </div>
 </template>
 
-<script>
+<script lang="js">
 import AppHeader from './Header';
 import AppFooter from './Footer';
 
 export default {
+    name: 'app',
     components: {
         AppHeader,
         AppFooter,

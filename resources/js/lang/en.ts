@@ -1,4 +1,4 @@
-import elementUi from 'element-ui/lib/locale/lang/en';
+import elementUi from 'element-plus/lib/locale/lang/en';
 
 export default {
     login: {

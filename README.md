@@ -1,6 +1,6 @@
 # Laravel SPA Boilerplate
 
-This boilerplate is based on **Laravel 8** and **Vue 2**. It makes use of multiple useful packages, like Vuex, Vue-router and a lot more (see [Packages](#Packages) for a full list).
+This boilerplate is based on **Laravel 8** and **Vue 3** using **TypeScript**. It makes use of multiple useful packages, like Vuex, Vue-router and a lot more (see [Packages](#Packages) for a full list).
 
 This boilerplate is a SPA (Single Page Application) which works out of the box. It comes with a working login, a register page with email validation and dashboard. This means you don't have to spend any time on setting that up, just focus on what's important.
 
@@ -161,7 +161,7 @@ Same as `dd` but with headers properly set, so that the value can be seen even i
   - [Laravel-Mix](https://laravel.com/docs/master/mix)
   - [SASS](https://sass-lang.com/)
   - [TypeScript](https://www.typescriptlang.org/) 
-  - [VueJS](https://vuejs.org/)
+  - [Vue 3](https://vuejs.org/)
   - [Vue i18n](https://kazupon.github.io/vue-i18n/)
   - [Vue Router](https://router.vuejs.org/)
   - [Vuex](https://vuex.vuejs.org/guide/)
@@ -172,16 +172,16 @@ Same as `dd` but with headers properly set, so that the value can be seen even i
 
   - [Dump Server](https://github.com/beyondcode/laravel-dump-server)
   - [Laravel Permission](https://github.com/spatie/laravel-permission)
-  - [Passport](https://laravel.com/docs/8.x/passport)
+  - [Laravel Passport](https://laravel.com/docs/8.x/passport)
 
 ### JS
-  - [Async-validator 3.4.0](https://github.com/yiminghe/async-validator)
+  - [Async-validator](https://github.com/yiminghe/async-validator)
   - [Axios](https://github.com/axios/axios)
   - [Browser Sync](https://github.com/BrowserSync/browser-sync)
   - [Bundle Analyzer](https://github.com/MaximVanhove/laravel-mix-bundle-analyzer)
   - [Day.js](https://github.com/iamkun/dayjs)
+  - [Element-Plus](https://element-plus.org)
   - [Fontawesome free](https://github.com/FortAwesome/Font-Awesome)
-  - [Lodash](https://github.com/lodash/lodash)
   - [PurgeCss](https://github.com/spatie/laravel-mix-purgecss)
   - [TailwindCSS](https://tailwindcss.com)
 

@@ -1,12 +1,9 @@
-import Vue  from 'vue';
-import Vuex from 'vuex';
+import {createStore} from 'vuex';
 
 import Language from './store/Language';
 import User     from './store/User';
 
-Vue.use( Vuex );
-
-export default new Vuex.Store( {
+export default createStore( {
     modules: {
         Language,
         User,

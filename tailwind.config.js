@@ -4,7 +4,6 @@ module.exports = {
         './resources/js/**/*.vue',
         './resources/views/**/*.blade.php',
     ],
-    target:      'relaxed',
     prefix:      '',
     important:   false,
     separator:   ':',

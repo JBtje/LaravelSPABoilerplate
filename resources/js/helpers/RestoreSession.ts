@@ -1,12 +1,12 @@
-import store from '../store.js'
+import store from '../store'
 
-import { resetRouter } from '../router'
+import {resetRouter} from '../router'
 import DefaultRouter from '../router/DefaultRouter'
-import UserRouter from '../router/UserRouter'
+import UserRouter    from '../router/UserRouter'
 
 export async function restoreSession( router ) {
     let accessToken = localStorage.getObject( 'userToken' );
-    let userData = localStorage.getObject( 'userData' );
+    let userData    = localStorage.getObject( 'userData' );
 
     if( userData ) {
         store.commit( 'setUser', userData );
@@ -14,6 +14,11 @@ export async function restoreSession( router ) {
 
     if( accessToken ) {
         resetRouter( UserRouter );
+
+        // Don't try to re-login on a logout route.
+        if( window.location.pathname === '/logout' ) {
+            return;
+        }
 
         store.commit( 'setAccessToken', accessToken );
         store.dispatch( 'fetchUser' ).then( response => {

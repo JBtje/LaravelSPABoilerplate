@@ -5,6 +5,19 @@
                          class="text-white text-3xl cursor-pointer"
                          tag="h3">Laravel SPA
             </router-link>
+
+            <lang-select class="inline-block float-right"/>
         </div>
     </header>
 </template>
+
+<script lang="js">
+import LangSelect from './LangSelect';
+
+export default {
+    name:       'app-header',
+    components: {
+        LangSelect,
+    },
+};
+</script>

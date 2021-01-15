@@ -2,14 +2,21 @@
 
 namespace App\Exceptions;
 
-class BaseException extends \Exception
+use Exception;
+
+class BaseException extends Exception
 {
     public $errors = [];
     public $args   = [];
 
-    public function __construct( $message = '', $code = 200, \Exception $previous = NULL, ...$args )
+    public function __construct( $message = '', $code = 200, Exception $previous = NULL, ...$args )
     {
-        $this->args = $args;
+        if( isset( $args[0] ) && is_array( $args[0] ) && !isset( $args[1] ) ) {
+            $this->args = $args[0];
+        }
+        else {
+            $this->args = $args;
+        }
 
         parent::__construct( $message, $code, $previous );
     }

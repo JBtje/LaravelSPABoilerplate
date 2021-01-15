@@ -1,4 +1,4 @@
-import store from '../store.js';
+import store from '../store';
 
 export function restoreLanguage() {
     // Check if a language is stored on the computer. Ifnot, use the default from the .env file.

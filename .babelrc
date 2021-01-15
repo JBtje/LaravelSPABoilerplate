@@ -14,15 +14,6 @@
       }
     ]
   ],
-  "plugins": [
-    [
-      "component",
-      {
-        "libraryName": "element-ui",
-        "styleLibraryName": "theme-chalk"
-      }
-    ]
-  ],
   "env": {
     "development": {
       "compact": false

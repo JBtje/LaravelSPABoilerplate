@@ -14,8 +14,6 @@ class DefaultUserSeeder extends Seeder
      */
     public function run()
     {
-        User::truncate();
-
         $user = User::factory()
                     ->create( [
                         'username' => 'Admin',

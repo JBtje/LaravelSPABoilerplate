@@ -1,14 +1,14 @@
-import Vue     from 'vue';
-import VueI18n from 'vue-i18n';
+import {createI18n} from 'vue-i18n';
 
 //import de from  './lang/de';
 import en from './lang/en';
 import nl from './lang/nl';
 
-Vue.use( VueI18n );
+import {restoreLanguage} from './helpers/RestoreLanguage';
 
-export default new VueI18n( {
-    locale:                'nl',
+restoreLanguage()
+export default createI18n( {
+    locale:                restoreLanguage(),
     fallbackLocale:        'en',
     silentTranslationWarn: true,
 

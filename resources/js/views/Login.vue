@@ -8,8 +8,7 @@
 
             <el-form-item :error="errors.username" :label="$t( 'username' )" prop="username">
                 <el-input v-model="form.username"
-                          @keyup.enter.native="submit"
-                ></el-input>
+                          @keyup.enter.native="submit"></el-input>
             </el-form-item>
 
             <el-form-item :error="errors.password" :label="$t( 'password' )" prop="password">
@@ -19,7 +18,7 @@
             </el-form-item>
 
             <div class="block text-right">
-                <el-button type="submit" @click.native="submit">
+                <el-button @click.native="submit">
                     Sign In
                 </el-button>
             </div>

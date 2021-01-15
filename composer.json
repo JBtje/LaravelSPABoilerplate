@@ -9,21 +9,21 @@
   "license": "MIT",
   "require": {
     "php": "^7.3",
-    "beyondcode/laravel-dump-server": "1.5.0",
-    "fideloper/proxy": "4.4.0",
-    "fruitcake/laravel-cors": "2.0.2",
-    "guzzlehttp/guzzle": "7.0.1",
-    "laravel/framework": "8.5.0",
-    "laravel/passport": "10.0.1",
-    "laravel/tinker": "2.4.2",
-    "spatie/laravel-permission": "3.17.0"
+    "beyondcode/laravel-dump-server": "^1.7.0",
+    "fideloper/proxy": "^4.4.1",
+    "fruitcake/laravel-cors": "^2.0.3",
+    "guzzlehttp/guzzle": "^7.2.0",
+    "laravel/framework": "8.11.*",
+    "laravel/passport": "^10.1.0",
+    "laravel/tinker": "^2.5.0",
+    "spatie/laravel-permission": "^3.18.0"
   },
   "require-dev": {
-    "facade/ignition": "2.3.7",
-    "fzaninotto/faker": "1.9.1",
-    "mockery/mockery": "1.4.2",
-    "nunomaduro/collision": "5.0.2",
-    "phpunit/phpunit": "9.3.10"
+    "facade/ignition": "^2.5.8",
+    "fzaninotto/faker": "^1.9.2",
+    "mockery/mockery": "^1.4.2",
+    "nunomaduro/collision": "^5.2.0",
+    "phpunit/phpunit": "^9.5.0"
   },
   "config": {
     "optimize-autoloader": true,

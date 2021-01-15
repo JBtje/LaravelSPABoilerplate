@@ -10,6 +10,7 @@
     <script src="{{ mix('js/manifest.js') }}" type="text/javascript"></script>
     <script src="{{ mix('js/vendor.js') }}" type="text/javascript"></script>
     <link href="{{ mix('css/app.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ mix('js/vendor.css') }}" rel="stylesheet" type="text/css"/>
     <title>{{ config( 'app.name' )  }}</title>
 </head>
 <body>

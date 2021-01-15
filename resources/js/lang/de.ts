@@ -1,5 +1,5 @@
 // Uncomment if you want to use elementUI
-// import elementUi from 'element-ui/lib/locale/lang/de';
+// import elementPlus from 'element-plus/lib/locale/lang/de';
 
 export default {
     login: {
