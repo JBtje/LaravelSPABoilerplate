@@ -27,7 +27,6 @@ class AddRolesAndPermissions extends Migration
         // ------------------
         // Users
         // ------------------
-        // Within own practice/collaboration scope
         Permission::create( ['guard_name' => 'web', 'name' => 'Add Users'] );
         Permission::create( ['guard_name' => 'web', 'name' => 'View Users'] );
         Permission::create( ['guard_name' => 'web', 'name' => 'Edit Users'] );

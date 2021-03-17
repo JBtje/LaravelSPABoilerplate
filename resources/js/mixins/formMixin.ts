@@ -1,19 +1,16 @@
 export default {
     data() {
         return {
-            errors: {},
+            showLoader: false,
+            errors:     {},
         };
     },
 
     methods: {
         formMixin_onSubmit( event = undefined ) {
-            if( event !== undefined ) {
-                event.preventDefault();
-            }
             this.showLoader     = true;
-            this.errors         = [];
+            this.errors         = {};
             this.message        = null;
-            this.messageSuccess = null;
         },
 
         handleErrorResponse( error ) {
@@ -34,6 +31,9 @@ export default {
                 this.parseError( response );
                 return false;
             }
+
+            // Clear errors
+            this.errors = {};
 
             if( response.data.success !== undefined ) {
                 if( response.data.success === true ) {
@@ -68,7 +68,6 @@ export default {
             for( let fieldName in err ) {
                 // Add the message to the message box.
                 for( let i in err[fieldName] ) {
-
                     if( this.errors[fieldName] === undefined ) {
                         this.errors[fieldName] = '';
                     }

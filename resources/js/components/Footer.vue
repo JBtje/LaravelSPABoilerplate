@@ -9,12 +9,12 @@
 <i18n>
 {
     "en": {
-        "credits": "Created with: Laravel, Tailwind, Vue",
+        "credits": "Created with: Laravel | Tailwind | Vue",
         "php-packages": "Laravel, Laravel-Passport, Permissions, Dump server",
         "js-packages": "TypeScript, Laravel-mix, Vuex, Vue-router, vue-i18n,  day.js, fontawesome-free, axios, bundle-analyzer"
     },
     "nl": {
-        "credits": "Gemaakt met: Laravel, Tailwind, Vue",
+        "credits": "Gemaakt met: Laravel | Tailwind | Vue",
         "php-packages": "Laravel, Laravel-Passport, Permissions, Dump server",
         "js-packages": "TypeScript, Laravel-mix, Vuex, Vue-router, vue-i18n,  day.js, fontawesome-free, axios, bundle-analyzer"
     }

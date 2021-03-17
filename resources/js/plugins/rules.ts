@@ -7,7 +7,7 @@ const rules = function( i18n ) {
             {
                 required: true,
                 message:  () => i18n.t( 'validate.required' ),
-                trigger:  'change',
+                trigger:  'blur',
             },
         ],
 
@@ -53,6 +53,7 @@ const rules = function( i18n ) {
 // Export a plugin that can be registered with Vue 3
 export default {
     install: ( app, i18n ) => {
-        app.config.globalProperties.$rules = rules( i18n );
+        // We need to use i18n.global.t for translations, so just pass on i18n.global
+        app.config.globalProperties.$rules = rules( i18n.global );
     },
 };

@@ -2,7 +2,7 @@
     <div class="py-8">
         <el-form ref="form"
                  :model="form"
-                 class="max-w-sm"
+                 class="max-w-md"
                  label-width="150px"
                  status-icon>
 

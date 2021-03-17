@@ -84,11 +84,11 @@ mix.sass( 'resources/css/app.scss', 'public/css' )
 
 if( !mix.inProduction() && process.env.WEBPACK_BROWSERSYNC === 'true' ) {
     mix.browserSync(
-        {proxy: 'localhost:8000'},
-        //     {
-        //     base: './public',
-        //     proxy: process.env.APP_URL,
-        //     port: 8000,
-        // }
+        // {proxy: 'localhost:8000'},
+            {
+            base: './public',
+            proxy: process.env.APP_URL,
+            port: 8000,
+        }
     );
 }
